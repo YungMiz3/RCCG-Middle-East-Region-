@@ -1,0 +1,142 @@
+.showcase{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    
+}
+.showcase video{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.title{
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(to right, #0d0c0d, #1f1b26, #F6D1FD);
+    font-size: 30px;
+    color: #fff;
+    mix-blend-mode: multiply;
+    padding-top: 300px;
+    padding-left: 80px;
+}
+.title h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.title p{
+    padding-left: 55vh;
+    font-size: 25px;
+    margin-top: -5px;
+}
+.line{
+    width: 25%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 35vh;
+    overflow: hidden;
+}
+.line .line-span{
+    width: 65px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving {
+    0%{
+        left: -20%;
+    }
+    100%{
+        left: 100%;
+    }
+    
+}
+
+@media (max-width: 639px){
+    .showcase{
+        display: grid;
+    }
+    .title{
+        width: 100%;
+        display: block;
+        padding-left: 20px;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    .title p{
+        padding-left: 1px;
+        padding-top: 20px;
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+    .line{
+        bottom: 240px;
+    }
+
+}
+/* ----------------------------HISTORY ---------------------------------*/
+.history{
+    background: linear-gradient(to right, #2F1C53, #A46DFF, #F6D1FD);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    margin-top: -120px;
+}
+.rccg-history-img{
+    max-width: 100%
+}
+.rccg-history-img img{
+    flex-basis: 40%;
+    
+
+}
+.rccg-history{
+    font-size: 20px;
+    padding-right: 100px;
+}
+.rccg-history h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -1px;
+
+}
+.rccg-history .history-line{
+    width: 50%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    overflow: hidden;
+}
+
+@media (max-width: 639px){
+
+}
+
+
+@media (max-width: 730px){
+    .history{
+        display: grid;
+    }
+    .rccg-history{
+        font-size: 20px;
+        padding: 50px;
+    }
+    .rccg-history h1{
+        font-size: 35px;
+    }
+
+}
