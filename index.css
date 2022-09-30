@@ -216,7 +216,7 @@ nav #icon{
 
 #active{
     width: 5px;
-    height: 80px;
+    height: 50px;
     border-radius: 10px;
     background: black;
     position: absolute;
@@ -274,18 +274,18 @@ nav #icon{
     background: #c0c0c0;
     position: absolute;
     margin-top: -15px;
-    top: 40%;
+    top: 42%;
     right: 50px;
-    transform: translateY(-50%);
+    transform: translateY(-55%);
 }
 #active{
     width: 5px;
-    height: 60px;
+    height: 30px;
     border-radius: 10px;
     background: black;
     position: absolute;
     top: 40%;
-    transform: translateX(-50%);
+    transform: translateX(-55%);
     transition: 0.5s;
 }
 }
